@@ -6,5 +6,4 @@ export { default as Form } from "./Forms/Form/Form";
 export { default as Button } from "./Buttons/Button/Button";
 export { default as EntryForm } from "./Forms/EntryForm/EntryForm";
 export { default as Input } from "./Forms/Input/Input";
-export { default as InputText } from "./Forms/InputText/InputText";
-export { default as InputTextarea } from "./Forms/InputTextarea/InputTextarea";
+export { default as Textarea } from "./Forms/Textarea/Textarea";

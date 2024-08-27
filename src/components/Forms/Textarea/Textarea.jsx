@@ -1,11 +1,4 @@
-const InputTextarea = ({
-  name,
-  isValid,
-  value,
-  required,
-  onChange,
-  onFocus,
-}) => {
+const Textarea = ({ name, isValid, value, required, onChange, onFocus }) => {
   return (
     <textarea
       name={name}
@@ -18,4 +11,4 @@ const InputTextarea = ({
   );
 };
 
-export default InputTextarea;
+export default Textarea;

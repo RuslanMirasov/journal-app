@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { InputText, InputTextarea } from "@/components";
+import { Textarea } from "@/components";
 import "./Input.css";
 
 const Input = ({ type, name, label, required, onChange }) => {
@@ -23,9 +23,8 @@ const Input = ({ type, name, label, required, onChange }) => {
     <label className="label">
       {label && <span className="label__text">{label}</span>}
 
-      {(type === "text" || type === "number" || type === "email") && (
-        <InputText
-          type={type}
+      {type === "textarea" ? (
+        <Textarea
           name={name}
           isValid={isValid}
           required={required}
@@ -33,12 +32,11 @@ const Input = ({ type, name, label, required, onChange }) => {
           onChange={handleChange}
           onFocus={handleFocus}
         />
-      )}
-
-      {type === "textarea" && (
-        <InputTextarea
+      ) : (
+        <input
+          type={type}
           name={name}
-          isValid={isValid}
+          className={`input ${!isValid ? "invalid" : ""}`}
           required={required}
           value={value}
           onChange={handleChange}
