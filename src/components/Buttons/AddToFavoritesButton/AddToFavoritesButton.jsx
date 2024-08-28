@@ -2,16 +2,16 @@ import { useState } from "react";
 import "./AddToFavoritesButton.css";
 
 const AddToFavoritesButton = () => {
-  const [isActive, setIsActive] = useState(false);
+  const [isFavorite, setIsFavorite] = useState(false);
 
   const handleClick = () => {
-    setIsActive(!isActive);
+    setIsFavorite(!isFavorite);
   };
 
   return (
     <button
       type="button"
-      className={`addToFavoritesButton ${isActive === true ? "active" : ""}`}
+      className={`addToFavoritesButton ${isFavorite === true ? "active" : ""}`}
       onClick={handleClick}
     >
       <svg
