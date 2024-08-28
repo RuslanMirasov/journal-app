@@ -1,18 +1,14 @@
 import { AddToFavoritesButton } from "@/components";
 import "./EntryCard.css";
 
-const EntryCard = () => {
+const EntryCard = ({ card }) => {
+  const { date, motto, notes } = card;
   return (
     <li className="entryCard">
       <AddToFavoritesButton />
-      <strong>FEB 28, 2024</strong>
-      <h3>Some entrie title or headline</h3>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit rerum,
-        voluptates alias, saepe nemo assumenda quia nostrum laborum quisquam et
-        quo qui adipisci repudiandae aspernatur libero consequuntur quos quas.
-        Ea.
-      </p>
+      <strong>{date}</strong>
+      <h3>{motto}</h3>
+      <p>{notes}</p>
     </li>
   );
 };
