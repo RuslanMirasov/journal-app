@@ -7,3 +7,5 @@ export { default as Button } from "./Buttons/Button/Button";
 export { default as EntryForm } from "./Forms/EntryForm/EntryForm";
 export { default as Input } from "./Forms/Input/Input";
 export { default as Textarea } from "./Forms/Textarea/Textarea";
+export { default as Entries } from "./Entries/Entries/Entries";
+export { default as Navigation } from "./Navigation/Navigation";

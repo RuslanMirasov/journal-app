@@ -1,0 +1,36 @@
+.navigation {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.navigation__link {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+  color: var(--black);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navigation__link span {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 400;
+  background: var(--grey);
+  padding: 4px 10px;
+  border-radius: 10px;
+  margin-left: 4px;
+}
+
+.navigation__link.active {
+  color: var(--color);
+}
+
+.navigation__link.active span {
+  color: var(--white);
+  background: var(--color);
+}
