@@ -1,10 +1,15 @@
-import { Section, Navigation } from "@/components";
-import "./Entries.css";
+import { Section, Navigation, EntryList, EntryCard } from "@/components";
 
 const Entries = () => {
   return (
     <Section>
       <Navigation />
+      <EntryList>
+        <EntryCard />
+        <EntryCard />
+        <EntryCard />
+        <EntryCard />
+      </EntryList>
     </Section>
   );
 };

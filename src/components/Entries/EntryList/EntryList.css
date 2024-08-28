@@ -1,0 +1,9 @@
+.entryList {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
