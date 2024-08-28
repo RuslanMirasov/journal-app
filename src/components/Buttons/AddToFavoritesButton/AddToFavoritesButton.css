@@ -1,4 +1,4 @@
-.AddToFavoritesButton {
+.addToFavoritesButton {
   display: flex;
   position: absolute;
   right: 0px;
@@ -34,12 +34,12 @@
   fill: var(--color);
 }
 
-.AddToFavoritesButton.active .star--black {
+.addToFavoritesButton.active .star--black {
   transform: translate(0px, -10px);
   opacity: 0;
 }
 
-.AddToFavoritesButton.active .star--color {
+.addToFavoritesButton.active .star--color {
   transform: translate(0px, 0px);
   opacity: 1;
 }
